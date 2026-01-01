@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="UTF-8">
+<title>Pibor Computer Training Center (PCTC)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== BASIC RESET ===== */
+* { box-sizing: border-box; }
+
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #f4f6f8, #e8f0ff);
+    color: black;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(90deg, white, white);
+    color: black;
+    padding: 15px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.logo { width: 400px; }
+
+/* ===== NAV ===== */
+nav {
+    background: green;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav a:hover { background: #066b41; }
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 30px 15px;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 { color: #0b5ed7; }
+
+/* ===== ARABIC RTL ===== */
+.ar { direction: rtl; text-align: right; }
+
+/* ===== FORM ===== */
+.form-box {
+    background: #f9f9ff;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 2px solid #0b5ed7;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(90deg, #0b5ed7, #084298);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+button:hover { opacity: 0.85; }
+
+/* ===== FOOTER ===== */
+footer {
+    background: linear-gradient(90deg, #084298, #0b5ed7);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===== WHATSAPP ===== */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* ===== SWITCH BUTTON ===== */
+.switch-lang {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(90deg, #ff6b6b, #ff9f43);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.switch-lang:hover { opacity: 0.9; }
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 600px) {
+    .header-container { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="pctc-logo.png" alt="PCTC Logo" class="logo">
+        <div>
+            <h1 class="en">Pibor Computer Training Center (PCTC)</h1>
+            <h2 class="en">Empowering Skills Through Technology</h2>
+            <h1 class="ar">مركز تدريب الحاسوب ببيبور</h1>
+            <h2 class="ar">تمكين المهارات من خلال التكنولوجيا</h2>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#about" class="en">About</a>
+    <a href="#courses" class="en">Courses</a>
+    <a href="#register" class="en">Registration</a>
+    <a href="#certificate" class="en">Certificates</a>
+    <a href="#contact" class="en">Contact</a>
+
+    <a href="#about" class="ar">نبذة</a>
+    <a href="#courses" class="ar">الدورات</a>
+    <a href="#register" class="ar">التسجيل</a>
+    <a href="#certificate" class="ar">الشهادات</a>
+    <a href="#contact" class="ar">اتصل</a>
+</nav>
+
+<section id="about">
+    <h2 class="en">About Us</h2>
+    <p class="en">Pibor Computer Training Center (PCTC) is a community-based initiative providing practical computer and language skills to students and youth in Pibor.</p>
+
+    <h2 class="ar">نبذة عنا</h2>
+    <p class="ar">مركز تدريب الحاسوب ببيبور هو مبادرة مجتمعية تهدف إلى تزويد الطلاب والشباب بمهارات الحاسوب واللغات العملية.</p>
+</section>
+
+<section id="courses">
+    <h2 class="en">Our Courses</h2>
+    <ul class="en">
+        <li>Basic Computer Skills</li>
+        <li>Microsoft Word, Excel & PowerPoint</li>
+        <li>Internet & Email Skills</li>
+        <li>Introduction to Programming</li>
+        <li>Graphic Design Basics</li>
+        <li><strong>English Language Course</strong></li>
+        <li><strong>Simple Arabic Language Course</strong></li>
+    </ul>
+
+    <h2 class="ar">دوراتنا</h2>
+    <ul class="ar">
+        <li>مهارات الحاسوب الأساسية</li>
+        <li>مايكروسوفت وورد، إكسل وباوربوينت</li>
+        <li>مهارات الإنترنت والبريد الإلكتروني</li>
+        <li>مقدمة في البرمجة</li>
+        <li>أساسيات التصميم الجرافيكي</li>
+        <li><strong>دورة اللغة الإنجليزية</strong></li>
+        <li><strong>دورة اللغة العربية البسيطة</strong></li>
+    </ul>
+</section>
+
+<section id="register">
+    <h2 class="en">Student Registration</h2>
+    <h2 class="ar">تسجيل الطلاب</h2>
+
+    <form class="form-box"
+          action="https://docs.google.com/forms/d/e/FORM_ID_HERE/formResponse"
+          method="POST"
+          target="_blank">
+
+        <input type="text" name="entry.NAME_ID" placeholder="Full Name / الاسم الكامل" required>
+        <input type="tel" name="entry.PHONE_ID" placeholder="Phone Number / رقم الهاتف" required>
+
+        <select name="entry.COURSE_ID" required>
+            <option value="">Select Course / اختر الدورة</option>
+            <option value="Computer Skills">Computer Skills / مهارات الحاسوب</option>
+            <option value="English Language">English Language / اللغة الإنجليزية</option>
+            <option value="Simple Arabic">Simple Arabic / اللغة العربية البسيطة</option>
+        </select>
+
+        <button type="submit">Register / تسجيل</button>
+    </form>
+</section>
+
+<section id="certificate">
+    <h2 class="en">Certificates</h2>
+    <p class="en">Students who successfully complete their training will receive an <strongc>Official Certificate</strong> from Pibor Computer Training Center (PCTC).</p>
+    <ul class="en">
+        <li>Issued after course completion</li>
+        <li>Signed and stamped by the Center</li>
+        <li>Useful for jobs and further education</li>
+    </ul>
+
+    <h2 class="ar">الشهادات</h2>
+    <p class="ar">الطلاب الذين يكملون تدريبهم بنجاح سيحصلون على <strong>شهادة رسمية</strong> من مركز تدريب الحاسوب ببيبور.</p>
+    <ul class="ar">
+        <li>تصدر بعد إكمال الدورة</li>
+        <li>موقعة ومختومة من المركز</li>
+        <li>مفيدة للعمل والتعليم المستقبلي</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2 class="en">Contact Us</h2>
+    <p class="en">📍 Location: Pibor, South Sudan</p>
+    <p class="en">📞 Phone / WhatsApp: +211 XXX XXX XXX</p>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/211XXXXXXXX" 
+   class="whatsapp" 
+   target="_blank" 
+   title="Chat with us on WhatsApp">
+   💬
+</a>
+
+<!-- WhatsApp Bottom Bar Button -->
+<div style="text-align:center; margin:30px 0;">
+  <a href="https://wa.me/211XXXXXXXX" 
+     target="_blank" 
+     style="background: #25D366; 
+            color: white; 
+            padding: 12px 25px; 
+            border-radius: 30px; 
+            text-decoration: none; 
+            font-size: 16px; 
+            font-weight: bold; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+    📱 Message us on WhatsApp
+  </a>
+</div>
